@@ -7,7 +7,7 @@ import {
 
 const Footer = () => {
   return (
-    <Box py={4}>
+    <Box py={8}>
       <Container maxW="container.lg">
         <VStack spacing={2}>
           <Text>&copy; 2021 Philemon Heng.</Text>
