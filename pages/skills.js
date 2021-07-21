@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
+
+import { Box, Stack, HStack, Heading, Text } from '@chakra-ui/react'
 
 import {
   languagesData,
@@ -40,16 +41,24 @@ const Skills = (props) => {
   ]
 
   return (
-    <div>
+    <Box px={{ base: '4', md: '28' }}>
       <Head>
         <title>skills</title>
       </Head>
-      <div>
-        <h2>skills</h2>
-        <div>
-          {skillsDivs.map((skillsDiv, i) => (
-            <div id={skillsDiv.id} key={i}>
-              <h2>{skillsDiv.title}</h2>
+      <Heading mb="14">skills</Heading>
+      <Stack spacing="20">
+        {skillsDivs.map((skillsDiv, i) => (
+          <Stack key={i} >
+            <Text
+              fontWeight="bold"
+              textAlign="center"
+              fontSize="2xl"
+              color="blue"
+              mb='6'
+            >
+              {skillsDiv.title}
+            </Text>
+            <HStack flexWrap='wrap' spacing='10' justifyContent='center'>
               {skillsDiv.data.map((language, j) => (
                 <SkillCard
                   key={j}
@@ -57,11 +66,11 @@ const Skills = (props) => {
                   imgSrc={language.imgSrc}
                 />
               ))}
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
+            </HStack>
+          </Stack>
+        ))}
+      </Stack>
+    </Box>
   )
 }
 

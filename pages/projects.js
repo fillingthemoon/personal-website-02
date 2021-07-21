@@ -12,7 +12,7 @@ const Projects = (props) => {
       <Head>
         <title>projects</title>
       </Head>
-      <Heading mb="10">projects</Heading>
+      <Heading mb="16">projects</Heading>
       <Flex
         flexWrap="wrap"
         justifyContent={{ base: 'center', md: 'space-between' }}

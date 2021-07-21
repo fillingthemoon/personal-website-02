@@ -1,24 +1,27 @@
 import Image from 'next/image'
 
-import { Stack, Box, Text } from '@chakra-ui/react'
+import { Stack, Text } from '@chakra-ui/react'
 
 const SkillCard = (props) => {
-  const {
-    name,
-    imgSrc,
-  } = props
+  const { name, imgSrc } = props
 
   return (
-    <div>
+    <Stack
+      transition="0.2s"
+      _hover={{
+        transform: 'scale(1.07)',
+        transition: '0.2s',
+      }}
+    >
       <Image
-          src={imgSrc}
-          alt="skill"
-          width="70"
-          height="70"
-          objectFit="scale-down"
-        />
-      <span>{name}</span>
-    </div>
+        src={imgSrc}
+        alt="skill"
+        width="70"
+        height="70"
+        objectFit="scale-down"
+      />
+      <Text textAlign='center'>{name}</Text>
+    </Stack>
   )
 }
 

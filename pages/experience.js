@@ -9,7 +9,7 @@ const Experience = (props) => {
       <Head>
         <title>experience</title>
       </Head>
-      <Heading mb="20">experience</Heading>
+      <Heading mb="16">experience</Heading>
       <Stack spacing="10">
         {props.experienceData.map((experience, i) => (
           <Stack className="experience-item" key={i} spacing="1">
