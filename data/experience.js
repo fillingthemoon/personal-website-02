@@ -2,7 +2,7 @@ const experienceData = [
   {
     position: 'Student Associate',
     company: 'Yale-NUS College, Division of Science',
-    duration: 'Feb 2020 - July 2021',
+    duration: 'Feb 2020 - Aug 2021',
   },
   {
     position: 'Full Stack Developer Intern',
