@@ -50,7 +50,7 @@ const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
-    <Box shadow='md' py={2}>
+    <Box shadow='md' py={3}>
       <Container maxW="container.lg">
         <Flex h={16} alignItems={'center'} justify={'space-between'}>
           <IconButton

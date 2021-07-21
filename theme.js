@@ -15,7 +15,7 @@ const theme = extendTheme({
   fonts: {
     body: 'Open Sans',
     heading: 'Open Sans',
-  }
+  },
 })
 
 export default theme
