@@ -30,7 +30,7 @@ const ProjectCard = (props) => {
       >
         <Stack spacing="6">
           <Box>
-            <Image src={imgSrc} alt="project" objectFit="scale-down" />
+            <Image src={imgSrc} alt="project" objectFit="scale-down" priority={true}/>
           </Box>
           <Text
             fontWeight="bold"

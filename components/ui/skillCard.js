@@ -19,6 +19,7 @@ const SkillCard = (props) => {
         width="70"
         height="70"
         objectFit="scale-down"
+        priority={true}
       />
       <Text textAlign='center'>{name}</Text>
     </Stack>
