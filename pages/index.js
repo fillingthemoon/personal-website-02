@@ -42,7 +42,7 @@ const Home = () => {
           sustainability.
         </Text>
         <Text>
-          Check out my GitHub page (sidebar) for more info and minor coding
+          Check out my GitHub page for more info and minor coding
           projects! :)
         </Text>
       </Stack>
