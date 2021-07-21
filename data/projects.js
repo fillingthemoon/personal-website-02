@@ -27,7 +27,7 @@ const projectsData = [
   },
   {
     url: 'https://talentdelhi6qissagoi.netlify.app/#/home',
-    title: 'Talent Delhi-6 Qissa Goi NGO Website',
+    title: 'Talent Delhi-6 Qissa Goi (NGO) Website',
     imgSrc: qissa,
     description:
       'This is a website for the non-governmental organisation "Talent Delhi-6 Qissa Goi NGO Website", built using Vue, TailwindCSS, imagekit.io, and Netlify.',
@@ -47,17 +47,17 @@ const projectsData = [
       'This is a pomodoro timer web app built using JavaScipt, CSS, and HTML.',
   },
   {
+    url: 'https://fillingthemoon.github.io/memory-card/',
+    title: 'Memory Game',
+    imgSrc: memoryGame,
+    description: 'This is a memory game built using React.',
+  },
+  {
     url: 'https://fillingthemoon.github.io/tictactoe/',
     title: 'Tic-Tac-Toe',
     imgSrc: ticTacToe,
     description:
       'This is a tic-tac-toe web app built using JavaScipt, CSS, and HTML.',
-  },
-  {
-    url: 'https://fillingthemoon.github.io/memory-card/',
-    title: 'Memory Game',
-    imgSrc: memoryGame,
-    description: 'This is a memory game built using React.',
   },
 ]
 

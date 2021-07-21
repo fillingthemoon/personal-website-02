@@ -7,9 +7,9 @@ const Experience = (props) => {
   return (
     <Box px={{ base: '4', md: '28' }}>
       <Head>
-        <title>experience</title>
+        <title>Experience | Philemon Heng</title>
       </Head>
-      <Heading mb="16">experience</Heading>
+      <Heading mb="16">Experience</Heading>
       <Stack spacing="10">
         {props.experienceData.map((experience, i) => (
           <Stack className="experience-item" key={i} spacing="1">

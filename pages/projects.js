@@ -10,9 +10,9 @@ const Projects = (props) => {
   return (
     <Box px={{ base: '4', md: '28' }}>
       <Head>
-        <title>projects</title>
+        <title>Projects | Philemon Heng</title>
       </Head>
-      <Heading mb="16">projects</Heading>
+      <Heading mb="16">Projects</Heading>
       <Flex
         flexWrap="wrap"
         justifyContent={{ base: 'center', md: 'space-between' }}

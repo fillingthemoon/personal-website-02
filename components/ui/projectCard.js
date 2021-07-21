@@ -7,6 +7,7 @@ const ProjectCard = (props) => {
 
   return (
     <Link
+      my='4'
       href={url}
       target="_blank"
       rel="noreferrer"

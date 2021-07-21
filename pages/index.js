@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <Box px={{ base: '4', md: '28' }}>
       <Head>
-        <title>about me</title>
+        <title>About Me | Philemon Heng</title>
       </Head>
       <Heading mb='16'>Hi there! :)</Heading>
       <Stack fontSize="lg" spacing={8} textAlign="justify">
