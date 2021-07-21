@@ -50,19 +50,18 @@ const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
-    <Box shadow='md' py={4}>
+    <Box shadow='md' p={4}>
       <Container maxW="container.lg">
         <Flex h={16} alignItems={'center'} justify={'space-between'}>
           <IconButton
-            size={'md'}
-            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+            icon={isOpen ? <CloseIcon fontSize='18px' /> : <HamburgerIcon fontSize='25px' />}
             aria-label={'Open Menu'}
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
             backgroundColor="white"
             transition="0.2s"
             _hover={{
-              transform: 'scale(1.3)',
+              transform: 'scale(1.2)',
               transition: '0.2s',
             }}
           />
