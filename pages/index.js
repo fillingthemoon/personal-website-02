@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import GoogleFonts from '../components/googleFonts'
 
 const Home = () => {
   return (
