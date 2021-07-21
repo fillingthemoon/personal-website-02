@@ -7,7 +7,7 @@ const Layout = (props) => {
   return (
     <Flex minHeight="100vh" flexDirection="column">
       <NavBar />
-      <Container maxW="container.lg" flexGrow="1" my='50px'>
+      <Container maxW="container.lg" flexGrow="1" my={20}>
         {props.children}
       </Container>
       <Footer />

@@ -7,14 +7,14 @@ const Home = () => {
       <Head>
         <title>about me</title>
       </Head>
-      <Heading mb={10}>about me</Heading>
+      <Heading mb={12}>about me</Heading>
       <Stack
         fontSize='lg'
         spacing={8}
         textAlign='justify'
       >
         <Text>
-          Since I was a kid, I&nbsp;ve loved building and putting things together;
+          Since I was a kid, I&apos;ve loved building and putting things together;
           from experimenting with small toy sets to assembling IKEA furniture
           and now, to building websites. Beginning my journey, delving into
           environmental studies in university has really showed me the pressing
@@ -40,7 +40,7 @@ const Home = () => {
           More recently, I have been creating a few full stack end-to-end web
           applications and seek to further explore the field of full stack
           web-development and GIS and how these technologies can be used to
-          positively impact others' lives and aid in environmental
+          positively impact others&apos; lives and aid in environmental
           sustainability.
         </Text>
         <Text>
