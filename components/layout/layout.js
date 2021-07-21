@@ -9,7 +9,7 @@ const Layout = (props) => {
     <Flex minHeight="100vh" flexDirection="column">
       <NavBar />
       <Contact />
-      <Container maxW="container.lg" flexGrow="1" mb={20} mt={20}>
+      <Container maxW="container.lg" flexGrow="1" mb={20} mt={16}>
         {props.children}
       </Container>
       <Footer />
