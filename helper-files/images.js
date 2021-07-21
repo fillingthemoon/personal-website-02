@@ -1,6 +1,7 @@
 // Projects
 import memoryGame from '../public/static/images/projects/memory-game.png'
 import pomodoroTimer from '../public/static/images/projects/pomodoro-timer.png'
+import qissa from '../public/static/images/projects/qissa.png'
 import sgMangroves from '../public/static/images/projects/sg-mangroves.png'
 import theOfficeScriptSearch from '../public/static/images/projects/the-office-script-search.png'
 import ticTacToe from '../public/static/images/projects/tic-tac-toe.png'
@@ -9,6 +10,7 @@ import trbc from '../public/static/images/projects/trbc.png'
 const projects = {
   memoryGame,
   pomodoroTimer,
+  qissa,
   sgMangroves,
   theOfficeScriptSearch,
   ticTacToe,
