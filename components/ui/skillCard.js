@@ -13,8 +13,8 @@ const SkillCard = (props) => {
       <Image
           src={imgSrc}
           alt="skill"
-          width="120"
-          height="120"
+          width="70"
+          height="70"
           objectFit="scale-down"
         />
       <span>{name}</span>

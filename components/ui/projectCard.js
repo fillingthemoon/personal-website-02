@@ -7,12 +7,13 @@ const ProjectCard = (props) => {
 
   return (
     <Stack
-      maxWidth="400px"
+      maxWidth="350px"
       spacing={2}
+      alignItems="center"
       m={8}
-      p={4}
+      p={10}
       cursor="pointer"
-      boxShadow="md"
+      boxShadow="lg"
       transition="0.2s"
       _hover={{
         transform: 'scale(1.07)',
@@ -23,8 +24,6 @@ const ProjectCard = (props) => {
         <Image
           src={imgSrc}
           alt="project"
-          width="300"
-          height="300"
           objectFit="scale-down"
         />
       </Box>
