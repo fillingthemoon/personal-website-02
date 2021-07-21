@@ -8,7 +8,7 @@ const Layout = (props) => {
     <Flex minHeight="100vh" flexDirection="column">
       <NavBar />
       <Container maxW="container.lg" flexGrow="1" mb={20} mt={44}>
-        <Flex justifyContent='center'>{props.children}</Flex>
+        {props.children}
       </Container>
       <Footer />
     </Flex>

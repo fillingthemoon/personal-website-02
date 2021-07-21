@@ -5,17 +5,21 @@ import { Heading, Text, Stack, Box } from '@chakra-ui/react'
 
 const Experience = (props) => {
   return (
-    <Box px={{ base: '4' }} maxWidth='3xl'>
+    <Box px={{ base: '4', md: '28' }}>
       <Head>
         <title>experience</title>
       </Head>
-      <Heading mb={12}>experience</Heading>
-      <Stack>
+      <Heading mb="20">experience</Heading>
+      <Stack spacing="10">
         {props.experienceData.map((experience, i) => (
-          <Stack className="experience-item" key={i}>
-            <Text>{experience.position}</Text>
-            <Text>{experience.company}</Text>
-            <Text>{experience.duration}</Text>
+          <Stack className="experience-item" key={i} spacing="1">
+            <Text fontSize="xl" color="blue" fontWeight="bold">
+              {experience.position}
+            </Text>
+            <Text fontSize="lg" fontWeight="bold">
+              {experience.company}
+            </Text>
+            <Text fontSize="md">{experience.duration}</Text>
           </Stack>
         ))}
       </Stack>
