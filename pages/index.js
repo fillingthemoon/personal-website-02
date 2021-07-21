@@ -7,7 +7,7 @@ const Home = () => {
       <Head>
         <title>about me</title>
       </Head>
-      <Heading mb={12}>Hi there! :)</Heading>
+      <Heading mb='12'>Hi there! :)</Heading>
       <Stack fontSize="lg" spacing={8} textAlign="justify">
         <Text>
           Since I was a kid, I&apos;ve always loved building and putting things

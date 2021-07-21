@@ -4,13 +4,19 @@ import { Flex } from '@chakra-ui/react'
 import projectsData from '../data/projects'
 import ProjectCard from '../components/ui/projectCard'
 
+import { Box, Heading } from '@chakra-ui/react'
+
 const Projects = (props) => {
   return (
-    <div>
+    <Box px={{ base: '4', md: '28' }}>
       <Head>
         <title>projects</title>
       </Head>
-      <Flex flexWrap="wrap" justifyContent="center">
+      <Heading mb="10">projects</Heading>
+      <Flex
+        flexWrap="wrap"
+        justifyContent={{ base: 'center', md: 'space-between' }}
+      >
         {props.projectsData.map((project, i) => {
           return (
             <ProjectCard
@@ -23,7 +29,7 @@ const Projects = (props) => {
           )
         })}
       </Flex>
-    </div>
+    </Box>
   )
 }
 

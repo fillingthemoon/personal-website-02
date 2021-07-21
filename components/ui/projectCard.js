@@ -18,7 +18,7 @@ const ProjectCard = (props) => {
         maxWidth="350px"
         spacing={2}
         alignItems="center"
-        m={8}
+        m={2}
         p={10}
         cursor="pointer"
         boxShadow="lg"
@@ -28,13 +28,20 @@ const ProjectCard = (props) => {
           transition: '0.2s',
         }}
       >
-        <Box>
-          <Image src={imgSrc} alt="project" objectFit="scale-down" />
-        </Box>
-        <Text fontWeight="600" textAlign="center">
-          {title}
-        </Text>
-        <Text>{description}</Text>
+        <Stack spacing="6">
+          <Box>
+            <Image src={imgSrc} alt="project" objectFit="scale-down" />
+          </Box>
+          <Text
+            fontWeight="bold"
+            textAlign="center"
+            fontSize="2xl"
+            color="blue"
+          >
+            {title}
+          </Text>
+          <Text lineHeight='1.7'>{description}</Text>
+        </Stack>
       </Stack>
     </Link>
   )
