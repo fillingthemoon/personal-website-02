@@ -8,7 +8,6 @@ import {
   Link,
   IconButton,
   useDisclosure,
-  useColorModeValue,
   Stack,
 } from '@chakra-ui/react'
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
@@ -40,7 +39,7 @@ const NavLink = ({ name, href }) => (
       rounded={'md'}
       _hover={{
         textDecoration: 'none',
-        bg: useColorModeValue('gray.200', 'gray.700'),
+        bg: 'black',
       }}
     >
       {name}
@@ -52,7 +51,7 @@ const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
-    <Box bg={useColorModeValue('gray.100', 'gray.900')}>
+    <Box borderBottom="1px solid black">
       <Container  maxW="container.lg">
         <Flex h={16} alignItems={'center'} justify={'space-between'}>
           <IconButton
