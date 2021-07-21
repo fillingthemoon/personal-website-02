@@ -10,7 +10,7 @@ const Home = () => {
       <Heading textAlign={{ base: 'center', md: 'left' }} mb="16">
         Hi there! :)
       </Heading>
-      <Stack fontSize="lg" spacing={8} textAlign="justify">
+      <Stack fontSize="lg" spacing={8} textAlign="justify" lineHeight='8'>
         <Text>
           Since I was a kid, I&apos;ve always loved building and putting things
           together; from experimenting with small toy sets to assembling IKEA
