@@ -8,22 +8,18 @@ const Home = () => {
         <title>about me</title>
       </Head>
       <Heading mb={12}>Hi there! :)</Heading>
-      <Stack
-        fontSize='lg'
-        spacing={8}
-        textAlign='justify'
-      >
+      <Stack fontSize="lg" spacing={8} textAlign="justify">
         <Text>
-          Since I was a kid, I&apos;ve loved building and putting things together;
-          from experimenting with small toy sets to assembling IKEA furniture
-          and now, to building websites. Beginning my journey, delving into
-          environmental studies in university has really showed me the pressing
-          need for further efforts in environmental sustainability around the
-          world. Geographical Information Systems (GIS) proved to be valuable
-          for this such as using remote sensing to detect LULC change over time
-          and investigating the UHI effect and water/electricity consumption in
-          Singapore. With more experience, GIS opened the doors for me into the
-          world of tech.
+          Since I was a kid, I&apos;ve always loved building and putting things
+          together; from experimenting with small toy sets to assembling IKEA
+          furniture and now, to building websites. Beginning my journey, delving
+          into environmental studies in university has really showed me the
+          pressing need for further efforts in environmental sustainability
+          around the world. Geographical Information Systems (GIS) proved to be
+          valuable for this such as using remote sensing to detect LULC change
+          over time and investigating the UHI effect and water/electricity
+          consumption in Singapore. With more experience, GIS opened the doors
+          for me into the world of tech.
         </Text>
         <Text>
           Taking a handful of computer science modules in university and online
