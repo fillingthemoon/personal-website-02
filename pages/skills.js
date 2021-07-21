@@ -54,7 +54,6 @@ const Skills = (props) => {
               textAlign="center"
               fontSize="2xl"
               color="blue"
-              mb='6'
             >
               {skillsDiv.title}
             </Text>

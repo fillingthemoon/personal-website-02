@@ -7,6 +7,8 @@ const SkillCard = (props) => {
 
   return (
     <Stack
+      my='4'
+      spacing='2'
       transition="0.2s"
       _hover={{
         transform: 'scale(1.07)',
