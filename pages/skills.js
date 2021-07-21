@@ -7,28 +7,8 @@ import {
   toolsData,
   gisToolsData,
   databaseToolsData,
-}
-from '../data/skills'
-
-const SkillsCard = (props) => {
-  const {
-    name,
-    imgSrc,
-  } = props
-
-  return (
-    <div className='skills-card'>
-      <Image
-          src={imgSrc}
-          alt="skill"
-          width="120"
-          height="120"
-          objectFit="scale-down"
-        />
-      <span>{name}</span>
-    </div>
-  )
-}
+} from '../data/skills'
+import SkillCard from '../components/ui/skillCard'
 
 const Skills = (props) => {
   const skillsDivs = [
@@ -64,21 +44,19 @@ const Skills = (props) => {
       <Head>
         <title>skills</title>
       </Head>
-      <div id="content-container">
-        <h2 id="content-title">skills</h2>
-        <div id="skills">
+      <div>
+        <h2>skills</h2>
+        <div>
           {skillsDivs.map((skillsDiv, i) => (
-            <div id={skillsDiv.id} className="skills-div" key={i}>
+            <div id={skillsDiv.id} key={i}>
               <h2>{skillsDiv.title}</h2>
-              <div className="skills-div-items">
-                {skillsDiv.data.map((language, j) => (
-                  <SkillsCard
-                    key={j}
-                    name={language.name}
-                    imgSrc={language.imgSrc}
-                  />
-                ))}
-              </div>
+              {skillsDiv.data.map((language, j) => (
+                <SkillCard
+                  key={j}
+                  name={language.name}
+                  imgSrc={language.imgSrc}
+                />
+              ))}
             </div>
           ))}
         </div>
