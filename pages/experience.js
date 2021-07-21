@@ -1,20 +1,25 @@
 import Head from 'next/head'
 import experienceData from '../data/experience'
 
+import { Heading, Text, Stack, Box } from '@chakra-ui/react'
+
 const Experience = (props) => {
   return (
-    <div>
+    <Box px={{ base: '4' }} maxWidth='3xl'>
       <Head>
         <title>experience</title>
       </Head>
-      {props.experienceData.map((experience, i) => (
-        <div className="experience-item" key={i}>
-          <h2>{experience.position}</h2>
-          <h3>{experience.company}</h3>
-          <h4>{experience.duration}</h4>
-        </div>
-      ))}
-    </div>
+      <Heading mb={12}>experience</Heading>
+      <Stack>
+        {props.experienceData.map((experience, i) => (
+          <Stack className="experience-item" key={i}>
+            <Text>{experience.position}</Text>
+            <Text>{experience.company}</Text>
+            <Text>{experience.duration}</Text>
+          </Stack>
+        ))}
+      </Stack>
+    </Box>
   )
 }
 

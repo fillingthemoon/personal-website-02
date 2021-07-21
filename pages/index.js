@@ -3,7 +3,7 @@ import { Heading, Text, Stack, Box } from '@chakra-ui/react'
 
 const Home = () => {
   return (
-    <Box px={{ base: '4', md: '20' }}>
+    <Box px={{ base: '4' }} maxWidth='3xl'>
       <Head>
         <title>about me</title>
       </Head>
