@@ -1,6 +1,6 @@
 import {
   skills
-} from './helper-files/images/'
+} from '../helper-files/images'
 
 const {
   img_001,

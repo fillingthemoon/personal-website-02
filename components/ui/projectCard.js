@@ -22,7 +22,7 @@ const ProjectCard = (props) => {
       <Box>
         <Image
           src={imgSrc}
-          alt="product"
+          alt="project"
           width="300"
           height="300"
           objectFit="scale-down"
