@@ -45,7 +45,7 @@ const Skills = (props) => {
       <Head>
         <title>Skills | Philemon Heng</title>
       </Head>
-      <Heading mb="14">Skills</Heading>
+      <Heading textAlign={{ base: 'center', md: 'left' }} mb="14">Skills</Heading>
       <Stack spacing="20">
         {skillsDivs.map((skillsDiv, i) => (
           <Stack key={i} >
