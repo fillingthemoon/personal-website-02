@@ -19,7 +19,6 @@ const ProjectCard = (props) => {
         maxWidth="350px"
         spacing={2}
         alignItems="center"
-        m={2}
         p={10}
         cursor="pointer"
         boxShadow="lg"
