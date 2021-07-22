@@ -11,6 +11,7 @@ const ContactLink = (props) => {
       _hover={{
         transform: 'scale(1.2)',
         transition: '0.2s',
+        color: 'blue',
       }}
       href={props.url}
       target="_blank"
