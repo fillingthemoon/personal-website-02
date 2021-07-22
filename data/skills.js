@@ -34,6 +34,9 @@ const {
   img_029,
   img_030,
   img_031,
+  img_032,
+  img_033,
+  img_034,
 } = skills
 
 const languagesData = [
@@ -73,6 +76,11 @@ const frameworksAndLibrariesData = [
   {
     name: 'React',
     imgSrc: img_007,
+    category: 'main',
+  },
+  {
+    name: 'NextJS',
+    imgSrc: img_034,
     category: 'main',
   },
   {
@@ -146,6 +154,16 @@ const toolsData = [
   {
     name: 'Heroku',
     imgSrc: img_017,
+    category: 'main',
+  },
+  {
+    name: 'Netlify',
+    imgSrc: img_032,
+    category: 'main',
+  },
+  {
+    name: 'Vercel',
+    imgSrc: img_033,
     category: 'main',
   },
   {
