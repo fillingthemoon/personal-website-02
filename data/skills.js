@@ -37,6 +37,7 @@ const {
   img_032,
   img_033,
   img_034,
+  img_035,
 } = skills
 
 const languagesData = [
@@ -121,6 +122,11 @@ const frameworksAndLibrariesData = [
   {
     name: 'AntDesign',
     imgSrc: img_011,
+    category: 'main',
+  },
+  {
+    name: 'Chakra UI',
+    imgSrc: img_035,
     category: 'main',
   },
 ]

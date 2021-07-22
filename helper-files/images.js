@@ -54,6 +54,7 @@ const img_031 = `${baseUrl}skills/img_031.png`
 const img_032 = `${baseUrl}skills/img_032.png`
 const img_033 = `${baseUrl}skills/img_033.png`
 const img_034 = `${baseUrl}skills/img_034.png`
+const img_035 = `${baseUrl}skills/img_035.png`
 
 const skills = {
   img_001,
@@ -90,6 +91,7 @@ const skills = {
   img_032,
   img_033,
   img_034,
+  img_035,
 }
 
 export {
