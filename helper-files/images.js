@@ -4,6 +4,7 @@ const baseUrl = 'https://raw.githubusercontent.com/fillingthemoon/personal-websi
 const memoryGame = `${baseUrl}projects/memory-game.png`
 const pomodoroTimer = `${baseUrl}projects/pomodoro-timer.png`
 const qissa = `${baseUrl}projects/qissa.png`
+const geocask = `${baseUrl}projects/geocask.png`
 const sgMangroves = `${baseUrl}projects/sg-mangroves.png`
 const theOfficeScriptSearch = `${baseUrl}projects/the-office-script-search.png`
 const ticTacToe = `${baseUrl}projects/tic-tac-toe.png`
@@ -13,6 +14,7 @@ const projects = {
   memoryGame,
   pomodoroTimer,
   qissa,
+  geocask,
   sgMangroves,
   theOfficeScriptSearch,
   ticTacToe,
