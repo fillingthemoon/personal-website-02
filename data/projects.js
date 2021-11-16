@@ -4,7 +4,6 @@ const {
   memoryGame,
   pomodoroTimer,
   qissa,
-  geocask,
   sgMangroves,
   theOfficeScriptSearch,
   ticTacToe,
@@ -34,14 +33,7 @@ const projectsData = [
       'This is a website for the non-governmental organisation "Talent Delhi-6 Qissa Goi NGO Website", built using Vue, TailwindCSS, imagekit.io, and Netlify.',
   },
   {
-    url: 'https://geocask.vercel.app',
-    title: 'GeoCask',
-    imgSrc: geocask,
-    description:
-      'This is a website for me to showcase various map visualisations, built using Next.js and Vercel.',
-  },
-  {
-    url: 'https://sgmangroves.com',
+    url: 'https://fillingthemoon.github.io/mangroves_webmap/',
     title: 'SGMangroves',
     imgSrc: sgMangroves,
     description:
