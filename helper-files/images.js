@@ -8,6 +8,7 @@ const sgMangroves = `${baseUrl}projects/sg-mangroves.png`
 const theOfficeScriptSearch = `${baseUrl}projects/the-office-script-search.png`
 const ticTacToe = `${baseUrl}projects/tic-tac-toe.png`
 const trbc = `${baseUrl}projects/trbc.png`
+const bhb = `${baseUrl}projects/bhb.png`
 
 const projects = {
   memoryGame,
@@ -17,6 +18,7 @@ const projects = {
   theOfficeScriptSearch,
   ticTacToe,
   trbc,
+  bhb,
 }
 
 // Skills

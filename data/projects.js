@@ -8,6 +8,7 @@ const {
   theOfficeScriptSearch,
   ticTacToe,
   trbc,
+  bhb,
 } = projects
 
 const projectsData = [
@@ -24,6 +25,13 @@ const projectsData = [
     imgSrc: trbc,
     description:
       'This is a website for Thomson Road Baptist Church, built using React, Redux, AntDesign, Node, Express, MongoDB, and Heroku.',
+  },
+  {
+    url: 'https://bhbonline.vercel.app/',
+    title: 'Believers Hymn Book Online',
+    imgSrc: bhb,
+    description:
+      'This is a web app for searching for any hymn from the Believers Hymn Book by phrase or hymn number.',
   },
   {
     url: 'https://talentdelhi6qissagoi.netlify.app/#/home',
