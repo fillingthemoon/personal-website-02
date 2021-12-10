@@ -20,11 +20,11 @@ const projectsData = [
       'This is a web app for searching for any line from the popular sitcom "The Office", built using React, Redux, AntDesign, Node, Express, MongoDB, and Heroku.',
   },
   {
-    url: 'https://trbc.herokuapp.com',
+    url: 'https://sgtrbc.vercel.app',
     title: 'TRBC Website',
     imgSrc: trbc,
     description:
-      'This is a website for Thomson Road Baptist Church, built using React, Redux, AntDesign, Node, Express, MongoDB, and Heroku.',
+      'This is a website for Thomson Road Baptist Church, built using NextJS, Chakra UI, Redux, Contentful, and Vercel.',
   },
   {
     url: 'https://bhbonline.vercel.app/',
@@ -39,13 +39,6 @@ const projectsData = [
     imgSrc: qissa,
     description:
       'This is a website for the non-governmental organisation "Talent Delhi-6 Qissa Goi NGO Website", built using Vue, TailwindCSS, imagekit.io, and Netlify.',
-  },
-  {
-    url: 'https://fillingthemoon.github.io/mangroves_webmap/',
-    title: 'SGMangroves',
-    imgSrc: sgMangroves,
-    description:
-      "SGMangroves, a web map application that provides users with an overview of Singapore's mangroves, was built using JavaScipt, CSS, HTML, MapBox GL JS, QGIS, and OpenStreetMap.",
   },
   {
     url: 'https://fillingthemoon.github.io/pomodoro-timer/',
