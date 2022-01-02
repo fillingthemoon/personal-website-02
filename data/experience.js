@@ -1,5 +1,10 @@
 const experienceData = [
   {
+    position: 'Systems Analyst',
+    company: 'Urban Redevelopment Authority (URA)',
+    duration: 'Aug 2021 - Present',
+  },
+  {
     position: 'Student Associate',
     company: 'Yale-NUS College, Division of Science',
     duration: 'Feb 2020 - Aug 2021',
