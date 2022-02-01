@@ -13,11 +13,11 @@ const {
 
 const projectsData = [
   {
-    url: 'https://theofficescriptsearch.herokuapp.com',
+    url: 'https://theofficescriptsearch.vercel.app',
     title: 'The Office Script Search App',
     imgSrc: theOfficeScriptSearch,
     description:
-      'This is a web app for searching for any line from the popular sitcom "The Office", built using React, Redux, AntDesign, Node, Express, MongoDB, and Heroku.',
+      'This is a web app for searching for any line from the popular sitcom "The Office", built using Next.js, Chakra UI, Supabase, and Vercel.',
   },
   {
     url: 'https://sgtrbc.vercel.app',
