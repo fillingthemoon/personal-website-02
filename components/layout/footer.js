@@ -10,7 +10,7 @@ const Footer = () => {
     <Box py={8}>
       <Container maxW="container.lg">
         <VStack spacing={2}>
-          <Text>&copy; 2021 Philemon Heng.</Text>
+          <Text>&copy; 2022 Philemon Heng.</Text>
         </VStack>
       </Container>
     </Box>
