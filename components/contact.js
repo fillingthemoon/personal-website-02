@@ -6,10 +6,9 @@ import { IoMail } from 'react-icons/io5'
 const ContactLink = (props) => {
   return (
     <Link
-      fontSize="3xl"
+      fontSize="32px"
       transition="0.2s"
       _hover={{
-        transform: 'scale(1.2)',
         transition: '0.2s',
         color: 'blue',
       }}

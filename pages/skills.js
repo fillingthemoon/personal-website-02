@@ -45,10 +45,12 @@ const Skills = (props) => {
       <Head>
         <title>Skills | Philemon Heng</title>
       </Head>
-      <Heading textAlign={{ base: 'center', md: 'left' }} mb="14">Skills</Heading>
+      <Heading mb="14">
+        Skills
+      </Heading>
       <Stack spacing="20">
         {skillsDivs.map((skillsDiv, i) => (
-          <Stack key={i} >
+          <Stack key={i}>
             <Text
               fontWeight="bold"
               textAlign="center"
@@ -57,7 +59,7 @@ const Skills = (props) => {
             >
               {skillsDiv.title}
             </Text>
-            <HStack flexWrap='wrap' spacing='10' justifyContent='center'>
+            <HStack flexWrap="wrap" spacing="10" justifyContent="center">
               {skillsDiv.data.map((language, j) => (
                 <SkillCard
                   key={j}
@@ -74,6 +76,10 @@ const Skills = (props) => {
 }
 
 export async function getStaticProps() {
+  return {
+    notFound: true,
+  }
+
   return {
     props: {
       languagesData,

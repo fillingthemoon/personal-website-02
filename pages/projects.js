@@ -8,11 +8,17 @@ import { Box, Heading } from '@chakra-ui/react'
 
 const Projects = (props) => {
   return (
-    <Box px={{ base: '4', md: '28' }}>
+    <Box>
       <Head>
         <title>Projects | Philemon Heng</title>
       </Head>
-      <Heading textAlign={{ base: 'center', md: 'left' }} mb="10">Projects</Heading>
+      <Heading
+        fontSize="2.5rem"
+        textAlign={{ base: 'center', md: 'left' }}
+        mb={{ base: 4, md: 16 }}
+      >
+        Projects
+      </Heading>
       <Flex
         flexWrap="wrap"
         justifyContent={{ base: 'center', md: 'space-between' }}

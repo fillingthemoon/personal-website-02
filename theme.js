@@ -11,7 +11,7 @@ const theme = extendTheme({
   colors: {
     black: '#333',
     blue: '#0078f7',
-    gray: '#d4d4d4',
+    gray: '#757575',
   },
   fonts: {
     body: 'Open Sans',

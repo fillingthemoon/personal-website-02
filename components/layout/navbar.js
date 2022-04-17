@@ -21,8 +21,8 @@ const links = [
     href: '/',
   },
   {
-    name: 'about me',
-    href: '/',
+    name: 'about',
+    href: '/about',
   },
   {
     name: 'experience',
@@ -32,10 +32,10 @@ const links = [
     name: 'projects',
     href: '/projects',
   },
-  {
-    name: 'skills',
-    href: '/skills',
-  },
+  // {
+  //   name: 'skills',
+  //   href: '/skills',
+  // },
 ]
 
 const MobileMenu = (props) => {
@@ -87,7 +87,7 @@ const NavBar = () => {
 
   return (
     <Box bg="white" position="sticky" zIndex={2} py={{ base: 2, md: 4 }}>
-      <Container maxW="container.lg">
+      <Container maxW="container.md">
         <Flex h={16} alignItems={'center'} justify={'space-between'}>
           <IconButton
             icon={

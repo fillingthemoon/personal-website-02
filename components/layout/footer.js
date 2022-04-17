@@ -8,9 +8,9 @@ import {
 const Footer = () => {
   return (
     <Box py={8}>
-      <Container maxW="container.lg">
+      <Container maxW="container.md">
         <VStack spacing={2}>
-          <Text>&copy; 2022 Philemon Heng.</Text>
+          <Text>&copy; 2022 Philemon Heng</Text>
         </VStack>
       </Container>
     </Box>
