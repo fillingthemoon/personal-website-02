@@ -24,7 +24,7 @@ const projectsData = [
     title: 'TRBC Website',
     imgSrc: trbc,
     description:
-      'This is a website for Thomson Road Baptist Church, built using NextJS, Chakra UI, Redux, Contentful, and Vercel.',
+      'This is a website for Thomson Road Baptist Church, built using NextJS, Chakra UI, Contentful, and Vercel.',
   },
   {
     url: 'https://bhbonline.vercel.app/',
