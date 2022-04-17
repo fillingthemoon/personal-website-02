@@ -8,13 +8,12 @@ const Home = () => {
         <title>About Me | Philemon Heng</title>
       </Head>
       <Flex justify="center" my={20}>
-        <VStack spacing={6} align="flex-start" textAlign="left" maxW="350px">
-          <Heading fontSize="3rem">Hi there! 👋</Heading>
-          <Text fontSize="2rem" fontWeight={400}>
+        <VStack spacing={6} align="flex-start" textAlign="left" fontWeight={800}>
+          <Heading>
+            Hi there! 👋
+          </Heading>
+          <Text fontSize="1.7rem" fontWeight={400}>
             Philemon here :)
-          </Text>
-          <Text fontSize="1.4rem" fontWeight={300}>
-            Find out more about me and my work using the navbar above!
           </Text>
         </VStack>
       </Flex>
