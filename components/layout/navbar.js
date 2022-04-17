@@ -13,7 +13,6 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 import Contact from '../contact'
-import SubmenuAccordion from './submenuAccordion'
 
 const links = [
   {
@@ -23,6 +22,20 @@ const links = [
   {
     name: 'about',
     href: '/about',
+    submenu: [
+      {
+        name: 'Our History',
+        href: '/our-history',
+      },
+      {
+        name: 'Our Mission',
+        href: '/our-mission',
+      },
+      {
+        name: 'Our Beliefs and Practices',
+        href: '/our-beliefs-and-practices',
+      },
+    ],
   },
   {
     name: 'experience',
@@ -47,7 +60,6 @@ const MobileMenu = (props) => {
       'style',
       `overflow:${isMobileMenuOpen ? 'hidden' : 'none'};`
     )
-    console.log('hi')
   }, [isMobileMenuOpen])
 
   return isMobileMenuOpen ? (
@@ -55,19 +67,10 @@ const MobileMenu = (props) => {
       <Box backgroundColor="white" pb={2}>
         <Accordion allowToggle fontSize="1.1rem">
           {links.map((link, i) => {
-            return !link.submenu ? (
+            return (
               // Accordion navbar item
               <AccordionItem key={i} border="none">
                 <NavLink name={link.name} href={link.href} accordion={true} />
-              </AccordionItem>
-            ) : (
-              // Accordion item with a submenu containing other items
-              <AccordionItem border="none" key={i}>
-                <SubmenuAccordion
-                  name={link.name}
-                  href={link.href}
-                  submenu={link.submenu}
-                />
               </AccordionItem>
             )
           })}
