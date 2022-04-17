@@ -14,17 +14,10 @@ const Projects = (props) => {
         <title>Projects | Philemon Heng</title>
       </Head>
       <Layout>
-        <Heading
-          fontSize="2.5rem"
-          textAlign={{ base: 'center', md: 'left' }}
-          mb={{ base: 4, md: 16 }}
-        >
+        <Heading fontSize="2.5rem" mb={{ base: 4, md: 16 }}>
           Projects
         </Heading>
-        <Flex
-          flexWrap="wrap"
-          justifyContent={{ base: 'center', md: 'space-between' }}
-        >
+        <Flex flexWrap="wrap" justifyContent="center">
           {props.projectsData.map((project, i) => {
             return (
               <ProjectCard

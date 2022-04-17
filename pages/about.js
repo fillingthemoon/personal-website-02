@@ -36,7 +36,7 @@ const Home = () => {
             motivates me to strive to continually grow my knowledge and skills
             so as to deliver high-quality solutions on time and within budget.`}
             </Text>
-            <Flex mt={8} flexWrap="wrap">
+            <Flex mt={8} flexWrap="wrap" justify="center">
               {[
                 'React',
                 'NextJS',

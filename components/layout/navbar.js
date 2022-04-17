@@ -90,7 +90,7 @@ const NavBar = () => {
 
   return (
     <Box bg="white" position="sticky" zIndex={2} py={{ base: 2, md: 4 }}>
-      <Container maxW="container.md">
+      <Container maxW="container.lg">
         <Flex h={16} alignItems={'center'} justify={'space-between'}>
           <IconButton
             icon={
@@ -106,7 +106,7 @@ const NavBar = () => {
             backgroundColor="white"
             transition="0.2s"
             _hover={{
-              transform: 'scale(1.2)',
+              transform: 'scale(1.1)',
               transition: '0.2s',
             }}
           />

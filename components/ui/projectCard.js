@@ -1,13 +1,11 @@
-import Image from 'next/image'
-
-import { Stack, Box, Text, Link } from '@chakra-ui/react'
+import { Box, Text, Link, Image } from '@chakra-ui/react'
 
 const ProjectCard = (props) => {
   const { title, description, imgSrc, url } = props
 
   return (
     <Link
-      my='4'
+      display="flex"
       href={url}
       target="_blank"
       rel="noreferrer"
@@ -15,34 +13,39 @@ const ProjectCard = (props) => {
         textDecoration: 'none',
       }}
     >
-      <Stack
-        maxWidth="350px"
-        spacing={2}
-        alignItems="center"
-        p={10}
+      <Box
+        m={5}
         cursor="pointer"
-        boxShadow="lg"
-        transition="0.2s"
+        w="450px"
+        maxW="90vw"
+        border="1px solid"
+        borderColor="grayLL"
+        borderRadius="10px"
+        overflow="hidden"
         _hover={{
-          transform: 'scale(1.07)',
-          transition: '0.2s',
+          borderColor: "grayL"
         }}
       >
-        <Stack spacing="6">
-          <Box>
-            <Image src={imgSrc} alt="project" width='300px' height='300px' objectFit="scale-down" priority={true}/>
-          </Box>
+        <Image
+          src={imgSrc}
+          h="250px"
+          w="100%"
+          alt="project-item"
+          objectFit="cover"
+        />
+        <Box p={6} flexGrow={1}>
           <Text
             fontWeight="bold"
             textAlign="center"
-            fontSize="2xl"
+            fontSize="1.5rem"
             color="blue"
+            mb={4}
           >
             {title}
           </Text>
-          <Text lineHeight='1.7'>{description}</Text>
-        </Stack>
-      </Stack>
+          <Text lineHeight="1.7">{description}</Text>
+        </Box>
+      </Box>
     </Link>
   )
 }
