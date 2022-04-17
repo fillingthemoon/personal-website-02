@@ -19,17 +19,17 @@ const Experience = (props) => {
             {props.experienceData.map((experience, i) => (
               <VStack key={i} align="flex-start">
                 <Text
-                  fontSize="xl"
+                  fontSize="1.3rem"
                   color="blue"
-                  fontWeight="bold"
+                  fontWeight={700}
                   textAlign="left"
                 >
                   {experience.position}
                 </Text>
-                <Text fontSize="lg" fontWeight="bold" textAlign="left">
+                <Text fontSize="1.1rem" textAlign="left">
                   {experience.company}
                 </Text>
-                <Text fontSize="md" textAlign="left" color="gray">
+                <Text fontSize="1rem" textAlign="left" color="gray">
                   {experience.duration}
                 </Text>
               </VStack>
