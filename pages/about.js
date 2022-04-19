@@ -41,10 +41,10 @@ const Home = () => {
                 'React',
                 'NextJS',
                 'ExpressJS',
-                'Chakra UI',
                 'Python',
                 'PostgreSQL',
                 'MongoDB',
+                'Material-UI',
               ].map((skillName, i) => {
                 return <SkillPill key={i} name={skillName} />
               })}

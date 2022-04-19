@@ -15,8 +15,8 @@ const skillPillDict = [
     backgroundColor: '#555555',
   },
   {
-    name: 'Chakra UI',
-    backgroundColor: '#319795',
+    name: 'Material-UI',
+    backgroundColor: '#3399ff',
   },
   {
     name: 'Python',
