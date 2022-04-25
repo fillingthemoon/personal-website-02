@@ -4,7 +4,7 @@ import { Heading, VStack, Flex, Box, Text } from '@chakra-ui/react'
 
 const Home = () => {
   return (
-    <Box px={{ base: '4', md: '28' }}>
+    <Box>
       <Head>
         <title>Home | Philemon Heng</title>
       </Head>
