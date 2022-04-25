@@ -45,10 +45,6 @@ const links = [
     name: 'projects',
     href: '/projects',
   },
-  // {
-  //   name: 'skills',
-  //   href: '/skills',
-  // },
 ]
 
 const MobileMenu = (props) => {
