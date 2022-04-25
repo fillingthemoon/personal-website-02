@@ -16,7 +16,7 @@ const Home = () => {
               About
             </Heading>
             <Image
-              src="/static/images/about-me-pic.jpeg"
+              src="/images/about-me-pic.jpeg"
               alt="about-me-pic"
               borderRadius="50%"
               width="200px"
