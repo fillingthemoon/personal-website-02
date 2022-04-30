@@ -14,6 +14,12 @@ const projectsData = [
       'A website for Thomson Road Baptist Church, built using NextJS, Chakra UI, Contentful, and Vercel',
   },
   {
+    url: 'https://minimage.vercel.app/',
+    title: 'MINImage',
+    imgSrc: '/images/projects/minimage.png',
+    description: 'A web app for compressing JPG and PNG images, built using NextJS, Chakra UI, Sharp, React Dropzone, and Vercel.',
+  },
+  {
     url: 'https://bhbonline.vercel.app/',
     title: 'Believers Hymn Book Online',
     imgSrc: '/images/projects/bhb.png',
