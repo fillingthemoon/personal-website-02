@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Layout from '../components/layout/layout'
-import { Flex } from '@chakra-ui/react'
+import { Grid } from '@chakra-ui/react'
 
 import projectsData from '../data/projects'
 import ProjectCard from '../components/ui/projectCard'
@@ -17,7 +17,11 @@ const Projects = (props) => {
         <Heading fontSize="2.5rem" mb={{ base: 4, md: 16 }}>
           Projects
         </Heading>
-        <Flex flexWrap="wrap" justifyContent="center">
+        <Grid
+          templateColumns={{ md: '1fr 1fr' }}
+          columnGap={{ base: 10, lg: 20 }}
+          rowGap={10}
+        >
           {props.projectsData.map((project, i) => {
             return (
               <ProjectCard
@@ -29,7 +33,7 @@ const Projects = (props) => {
               />
             )
           })}
-        </Flex>
+        </Grid>
       </Layout>
     </Box>
   )

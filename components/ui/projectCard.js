@@ -14,16 +14,13 @@ const ProjectCard = (props) => {
       }}
     >
       <Box
-        m={5}
         cursor="pointer"
-        w="450px"
-        maxW="90vw"
         border="1px solid"
         borderColor="grayLL"
         borderRadius="10px"
         overflow="hidden"
         _hover={{
-          borderColor: "grayL"
+          borderColor: 'grayL',
         }}
       >
         <Image
