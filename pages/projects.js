@@ -2,12 +2,17 @@ import Head from 'next/head'
 import Layout from '../components/layout/layout'
 import { Grid } from '@chakra-ui/react'
 
-import projectsData from '../data/projects'
 import ProjectCard from '../components/ui/projectCard'
+
+import { getProjectItems } from './api/projectItems'
 
 import { Box, Heading } from '@chakra-ui/react'
 
 const Projects = (props) => {
+  const { projectItemsRes } = props
+
+  projectItemsRes.sort((a, b) => a.fields.order - b.fields.order)
+
   return (
     <Box>
       <Head>
@@ -22,14 +27,16 @@ const Projects = (props) => {
           columnGap={{ base: 10, lg: 20 }}
           rowGap={10}
         >
-          {props.projectsData.map((project, i) => {
+          {projectItemsRes.map((project, i) => {
+            const { title, description, image, url } = project.fields
+
             return (
               <ProjectCard
                 key={i}
-                title={project.title}
-                description={project.description}
-                imgSrc={project.imgSrc}
-                url={project.url}
+                title={title}
+                description={description}
+                image={image}
+                url={url}
               />
             )
           })}
@@ -39,12 +46,15 @@ const Projects = (props) => {
   )
 }
 
-export async function getStaticProps() {
+export async function getStaticProps(context) {
+  const projectItemsRes = await getProjectItems()
+
   return {
     props: {
-      projectsData,
+      projectItemsRes,
     },
-    revalidate: 3600,
+
+    revalidate: 60,
   }
 }
 

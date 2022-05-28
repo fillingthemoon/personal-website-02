@@ -1,7 +1,9 @@
-import { Box, Text, Link, Image } from '@chakra-ui/react'
+import { VStack, Box, Text, Link, Image } from '@chakra-ui/react'
+
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
 const ProjectCard = (props) => {
-  const { title, description, imgSrc, url } = props
+  const { title, description, image, url } = props
 
   return (
     <Link
@@ -24,7 +26,7 @@ const ProjectCard = (props) => {
         }}
       >
         <Image
-          src={imgSrc}
+          src={image.fields.file.url}
           h="250px"
           w="100%"
           alt="project-item"
@@ -40,7 +42,9 @@ const ProjectCard = (props) => {
           >
             {title}
           </Text>
-          <Text lineHeight="1.7">{description}</Text>
+          <VStack alignItems="flex-start" textAlign="justify">
+            {documentToReactComponents(description)}
+          </VStack>
         </Box>
       </Box>
     </Link>

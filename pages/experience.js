@@ -1,10 +1,15 @@
 import Head from 'next/head'
 import Layout from '../components/layout/layout'
-import experienceData from '../data/experience'
+
+import { getExperienceItems } from './api/experienceItems'
 
 import { Heading, Text, VStack, Flex, Box } from '@chakra-ui/react'
 
 const Experience = (props) => {
+  const { experienceItemsRes } = props
+
+  experienceItemsRes.sort((a, b) => a.fields.order - b.fields.order)
+
   return (
     <Box>
       <Head>
@@ -16,24 +21,28 @@ const Experience = (props) => {
             Experience
           </Heading>
           <VStack spacing={10} align="flex-start">
-            {props.experienceData.map((experience, i) => (
-              <VStack key={i} align="flex-start">
-                <Text
-                  fontSize="1.3rem"
-                  color="blue"
-                  fontWeight={700}
-                  textAlign="left"
-                >
-                  {experience.position}
-                </Text>
-                <Text fontSize="1.1rem" textAlign="left">
-                  {experience.company}
-                </Text>
-                <Text fontSize="1rem" textAlign="left" color="gray">
-                  {experience.duration}
-                </Text>
-              </VStack>
-            ))}
+            {experienceItemsRes.map((experience, i) => {
+              const { position, company, dates } = experience.fields
+
+              return (
+                <VStack key={i} align="flex-start">
+                  <Text
+                    fontSize="1.3rem"
+                    color="blue"
+                    fontWeight={700}
+                    textAlign="left"
+                  >
+                    {position}
+                  </Text>
+                  <Text fontSize="1.1rem" textAlign="left">
+                    {company}
+                  </Text>
+                  <Text fontSize="1rem" textAlign="left" color="gray">
+                    {dates}
+                  </Text>
+                </VStack>
+              )
+            })}
           </VStack>
         </Box>
       </Layout>
@@ -41,12 +50,15 @@ const Experience = (props) => {
   )
 }
 
-export async function getStaticProps() {
+export async function getStaticProps(context) {
+  const experienceItemsRes = await getExperienceItems()
+
   return {
     props: {
-      experienceData,
+      experienceItemsRes,
     },
-    revalidate: 3600,
+
+    revalidate: 60,
   }
 }
 

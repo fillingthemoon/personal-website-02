@@ -22,20 +22,6 @@ const links = [
   {
     name: 'about',
     href: '/about',
-    submenu: [
-      {
-        name: 'Our History',
-        href: '/our-history',
-      },
-      {
-        name: 'Our Mission',
-        href: '/our-mission',
-      },
-      {
-        name: 'Our Beliefs and Practices',
-        href: '/our-beliefs-and-practices',
-      },
-    ],
   },
   {
     name: 'experience',
@@ -44,6 +30,10 @@ const links = [
   {
     name: 'projects',
     href: '/projects',
+  },
+  {
+    name: 'blog',
+    href: '/blog',
   },
 ]
 
