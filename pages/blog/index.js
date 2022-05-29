@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import Layout from '../../components/layout/layout'
-import { Grid } from '@chakra-ui/react'
+import { VStack } from '@chakra-ui/react'
 
 import BlogCard from '../../components/ui/blogCard'
 
-import { getBlogItems } from './../api/blogItems'
+import { getBlogItems } from '../api/blogItems'
 
 import { Box, Heading } from '@chakra-ui/react'
 
@@ -24,13 +24,9 @@ const Blogs = (props) => {
         <Heading fontSize="2.5rem" mb={{ base: 4, md: 16 }}>
           Blog
         </Heading>
-        <Grid
-          templateColumns={{ md: '1fr 1fr' }}
-          columnGap={{ base: 10, lg: 20 }}
-          rowGap={10}
-        >
+        <VStack spacing={10}>
           {blogItemsRes.map((project, i) => {
-            const { title, content, image, dateAndTime } = project.fields
+            const { title, content, image, dateAndTime, slug, tags } = project.fields
 
             return (
               <BlogCard
@@ -39,10 +35,12 @@ const Blogs = (props) => {
                 content={content}
                 image={image}
                 dateAndTime={dateAndTime}
+                slug={slug}
+                tags={tags}
               />
             )
           })}
-        </Grid>
+        </VStack>
       </Layout>
     </Box>
   )
