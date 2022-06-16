@@ -18,11 +18,11 @@ const ProjectCard = (props) => {
       <Box
         cursor="pointer"
         border="1px solid"
-        borderColor="grayLL"
+        borderColor="gray.100"
         borderRadius="10px"
         overflow="hidden"
         _hover={{
-          borderColor: 'grayL',
+          borderColor: 'gray.200',
         }}
       >
         <Image
@@ -37,7 +37,7 @@ const ProjectCard = (props) => {
             fontWeight="bold"
             textAlign="center"
             fontSize="1.5rem"
-            color="blue"
+            color="primary.500"
             mb={4}
           >
             {title}

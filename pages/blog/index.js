@@ -21,7 +21,7 @@ const Blogs = (props) => {
         <title>Blog | Philemon Heng</title>
       </Head>
       <Layout>
-        <Heading fontSize="2.5rem" mb={{ base: 4, md: 16 }}>
+        {/* <Heading fontSize="2.5rem" mb={{ base: 4, md: 16 }}>
           Blog
         </Heading>
         <VStack spacing={10}>
@@ -40,7 +40,7 @@ const Blogs = (props) => {
               />
             )
           })}
-        </VStack>
+        </VStack> */}
       </Layout>
     </Box>
   )

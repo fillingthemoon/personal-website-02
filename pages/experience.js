@@ -28,7 +28,7 @@ const Experience = (props) => {
                 <VStack key={i} align="flex-start">
                   <Text
                     fontSize="1.3rem"
-                    color="blue"
+                    color="primary.500"
                     fontWeight={700}
                     textAlign="left"
                   >
