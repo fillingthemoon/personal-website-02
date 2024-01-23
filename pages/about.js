@@ -1,6 +1,7 @@
 import Head from 'next/head'
+import NextImage from 'next/image'
 import Layout from '../components/layout/layout'
-import { Heading, Flex, Box, Image, Text } from '@chakra-ui/react'
+import { Heading, Flex, Box, Text } from '@chakra-ui/react'
 import SkillPill from '../components/ui/skillPill'
 
 const Home = () => {
@@ -15,11 +16,12 @@ const Home = () => {
             <Heading fontSize="2.5rem" mb={{ base: 4, md: 16 }}>
               About
             </Heading>
-            <Image
+            <NextImage
               src="/images/about-me-pic.jpeg"
               alt="about-me-pic"
-              borderRadius="50%"
-              width="200px"
+              width={200}
+              height={200}
+              style={{ borderRadius: '50%' }}
             />
             <Box mt={4} mb={8}>
               <Text fontSize="1.5rem" fontWeight={700}>

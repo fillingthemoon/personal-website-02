@@ -1,4 +1,5 @@
-import { VStack, Box, Text, Link, Image } from '@chakra-ui/react'
+import NextImage from 'next/image'
+import { VStack, Box, Flex, Text, Link } from '@chakra-ui/react'
 
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
@@ -25,13 +26,14 @@ const ProjectCard = (props) => {
           borderColor: 'gray.200',
         }}
       >
-        <Image
-          src={image.fields.file.url}
-          h="250px"
-          w="100%"
-          alt="project-item"
-          objectFit="cover"
-        />
+        <Flex justifyContent="center">
+          <NextImage
+            src={`https:${image.fields.file.url}`}
+            alt="project-item"
+            width={500}
+            height={500}
+          />
+        </Flex>
         <Box p={6} flexGrow={1}>
           <Text
             fontWeight="bold"
